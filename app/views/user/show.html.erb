@@ -5,6 +5,9 @@
 
 <% @user.gossips.each do |gossip| %>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7222619b1af921b1f8084cfddd6c5e4021d4ca96
 <div class="card align-self-center mt-2" style="width: 100rem;">
   <div class="card-body">
     <h5 class="card-title"><%= link_to "#{gossip.title}", "/gossip/#{gossip.id}" %> </h5>
@@ -16,6 +19,7 @@
 
 										</div>
 									</div>
+<<<<<<< HEAD
 
  <% end %>
 =======
@@ -25,3 +29,8 @@
 
 <%= link_to "Créer un gossip", new_gossip_path(@user) %>
 >>>>>>> cb4d5b1f7b4809b3e76ced7a4aa012d7210ab553
+=======
+
+ <% end %>
+<%= link_to "Créer un gossip", new_gossip_path(@user) %>
+>>>>>>> 7222619b1af921b1f8084cfddd6c5e4021d4ca96
