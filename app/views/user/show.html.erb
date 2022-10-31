@@ -3,3 +3,5 @@ Voici la page de <%= @user.first_name %> <%= @user.last_name %><br/>
 	<li> <%= link_to "#{gossip.title}", "/gossip/#{gossip.id}" %> </li>
 	<li> <%= gossip.content %> </li>
 <% end %>
+
+<%= link_to "Créer un gossip", new_gossip_path(@user) %>
