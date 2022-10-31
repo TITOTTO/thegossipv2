@@ -1,0 +1,14 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="/welcome">Retourner sur la page d'accueil</a>
+</nav>
+<h1>Welcome#home</h1>
+<p> 
+<% @user.each_with_index do |user, index| %>
+			<li> <%= link_to "#{@user[index].first_name}", "/welcome/#{@user[index].id}" %> </li>
+            <% @user[index].gossips.each do |gossip| %>
+			    <li> <%= link_to "#{gossip.title}", "/gossip/#{gossip.id}" %> </li>
+            <% end %>
+<% end %>
+
+<%= link_to "La page de tous les gossip", "/gossip" %>
+</p>

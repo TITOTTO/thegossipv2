@@ -1,0 +1,8 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="/welcome">Retourner sur la page d'accueil</a>
+</nav>
+Voici la page de <%= @user.first_name %> <%= @user.last_name %><br/>
+<% @user.gossips.each do |gossip| %>
+	<li> <%= link_to "#{gossip.title}", "/gossip/#{gossip.id}" %> </li>
+	<li> <%= gossip.content %> </li>
+<% end %>

@@ -1,0 +1,6 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="/welcome">Retourner sur la page d'accueil</a>
+</nav>
+<li> <%= @gossip.title %> </li>
+<li> <%= @gossip.content %> </li>
+<li><%= link_to "#{@gossip.user.first_name}", "/welcome/#{@gossip.user.id}" %></li>

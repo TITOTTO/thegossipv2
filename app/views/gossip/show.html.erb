@@ -1,0 +1,8 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="/welcome">Retourner sur la page d'accueil</a>
+</nav>
+<% @gossip.each_with_index do |gossip, index| %>
+			<li> <%= link_to "#{@gossip[index].title}", "/gossip/#{@gossip[index].id}" %> </li>
+			<li> <%= @gossip[index].content %> </li>
+			<li> <%= @gossip[index].created_at %> </li>
+<% end %>
