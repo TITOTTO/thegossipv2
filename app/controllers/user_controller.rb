@@ -1,11 +1,12 @@
-class GossipController < ApplicationController
+class UserController < ApplicationController
   def index
-    @gossip = Gossip.all
+    @user = User.all
   end
 
   def show
-    @gossip = Gossip.find(params[:id])
+    @user = User.find(params[:id])
   end
+
   def new
     # Méthode qui crée un potin vide et l'envoie à une view qui affiche le formulaire pour 'le remplir' (new.html.erb)
   end

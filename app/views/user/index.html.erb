@@ -1,7 +1,7 @@
 <h1>Welcome#home</h1>
 <p> 
 <% @user.each_with_index do |user, index| %>
-			<li> <%= link_to "#{@user[index].first_name}", "/welcome/#{@user[index].id}" %> </li>
+			<li> <%= link_to "#{@user[index].first_name}", "/user/#{@user[index].id}" %> </li>
             <% @user[index].gossips.each do |gossip| %>
 			    <li> <%= link_to "#{gossip.title}", "/gossip/#{gossip.id}" %> </li>
             <% end %>
